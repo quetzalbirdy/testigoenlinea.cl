@@ -6,46 +6,9 @@ jQuery(document).ready(function(){
     */
     jQuery(function(){
         jQuery("#menu-container a, .menu-mobile a, .content.noticias a").click(function(evt){
-            jQuery('body').addClass('leaving')   
-            /* evt.preventDefault();
-            var link = jQuery(this).attr("href");
-            jQuery('body').addClass('leaving')            
-            setTimeout(function() {
-                window.location.href = link;
-            }, 100); */
+            jQuery('body').addClass('leaving')               
         });
-    });
-
-
-    /* jQuery("ul li a").each(function() {       
-    var linkElement = jQuery(this);
-    linkElement.one('mouseenter', function() {    
-        StrikeThrough(0, linkElement);                                              
-    })           
-    jQuery(this).on('mouseleave', function() {                
-        var normalText = jQuery(this);
-        jQuery(this).html(normalText.text());         
-        linkElement.one('mouseenter', function() {    
-            StrikeThrough(0, linkElement);                                              
-        })                   
-    })   
-            
-    function StrikeThrough(index, elem) {        
-        if (index < elem.text().length) {
-            let element = jQuery(elem).text();
-            var sToStrike = element.substr(0, index + 1);
-            var sAfter = (index < (element.length - 1)) ? element.substr(index + 1, element.length - index) : "";
-            jQuery(elem).html("<strike>" + sToStrike + "</strike>" + sAfter);                    
-            window.setTimeout(function() {            
-                StrikeThrough(index + 1, elem);    
-                if (!jQuery(elem).is(":hover")) {
-                    var normalText = elem;
-                    elem.html(normalText.text());     
-                }        
-            }, 40);  
-        }                                     
-    }
-})  */
+    });  
 
 
     function initReveal() {
